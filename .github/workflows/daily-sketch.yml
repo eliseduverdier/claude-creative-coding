@@ -1,0 +1,29 @@
+name: Daily sketch
+on:
+  schedule:
+    - cron: "00 8 * * *"   # 8h00 UTC chaque jour
+  workflow_dispatch:        # bouton pour lancer à la main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sketch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Read CLAUDE.md.
+            Create a sketch according to the rules.
+            Create a branch sketch/<date>, commit, push,
+            Then open a PR with gh pr create (title = sketch's name).
+          claude_args: |
+            --max-turns 20
+            --allowedTools "Read,Write,Edit,Bash(git:*),Bash(gh pr create:*)"
+        env:
+          GH_TOKEN: ${{ github.token }}
