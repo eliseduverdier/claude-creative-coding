@@ -1,8 +1,8 @@
 name: Daily sketch
 on:
   schedule:
-    - cron: "00 8 * * *"   # 8h00 UTC chaque jour
-  workflow_dispatch:        # bouton pour lancer à la main
+    - cron: "10 8 * * *"   # 8h10 UTC chaque jour
+  workflow_dispatch:       # bouton pour lancer à la main
 
 permissions:
   contents: write
