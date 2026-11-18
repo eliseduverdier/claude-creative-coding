@@ -14,7 +14,7 @@ function setup() {
     randomSeed(SEED);
     background(PAPER);
 
-    split(MARGIN, MARGIN, width - 2 * MARGIN, height - 2 * MARGIN, 0);
+    splitRect(MARGIN, MARGIN, width - 2 * MARGIN, height - 2 * MARGIN, 0);
     colorCells();
 
     for (const c of cells) drawCell(c);
@@ -23,7 +23,7 @@ function setup() {
 }
 
 // Recursively cut a rectangle in two, until it is small enough or by chance
-function split(x, y, w, h, depth) {
+function splitRect(x, y, w, h, depth) {
     const canSplitX = w > MIN_SIZE * 2;
     const canSplitY = h > MIN_SIZE * 2;
     if ((!canSplitX && !canSplitY) || (depth > 1 && random() < 0.25)) {
@@ -34,12 +34,12 @@ function split(x, y, w, h, depth) {
     const vertical = canSplitX && (!canSplitY || w > h || (w === h && random() < 0.5));
     if (vertical) {
         const cut = random(MIN_SIZE, w - MIN_SIZE);
-        split(x, y, cut, h, depth + 1);
-        split(x + cut, y, w - cut, h, depth + 1);
+        splitRect(x, y, cut, h, depth + 1);
+        splitRect(x + cut, y, w - cut, h, depth + 1);
     } else {
         const cut = random(MIN_SIZE, h - MIN_SIZE);
-        split(x, y, w, cut, depth + 1);
-        split(x, y + cut, w, h - cut, depth + 1);
+        splitRect(x, y, w, cut, depth + 1);
+        splitRect(x, y + cut, w, h - cut, depth + 1);
     }
 }
 
