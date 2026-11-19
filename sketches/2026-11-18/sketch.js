@@ -1,5 +1,4 @@
 // Bauhaus quarter circles, after Josef Albers and Herbert Bayer: a grid of arc tiles and one big letter
-const SEED = 20261118; // fixed seed for a reproducible render
 const N = 4; // tiles per side
 const MARGIN = 60;
 const PAPER = "#efe8d8";
@@ -8,7 +7,6 @@ const COLORS = ["#e63b2e", "#1f4e9c", "#f4b400", "#2a9d8f"]; // red, blue, yello
 
 function setup() {
     createCanvas(800, 800);
-    randomSeed(SEED);
     background(PAPER);
     noStroke();
 
