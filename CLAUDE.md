@@ -1,5 +1,6 @@
 - p5.js via CDN, aucune dépendance, pas de build
-- canvas 800x800, seed fixe (randomSeed) pour un rendu reproductible
+- canvas 800x800, rendu au hasard
 - un dossier par sketch dans sketches/<date>/, sur le modèle des existants
+- une entrée pour la date sur index.html
 - commentaires en anglais, code simple et lisible
-- thèmes de la géométrie, de la typographie, des couleurs, inspiré de l'art moderne et contemporain 
+- thèmes de la géométrie, de la typographie, des couleurs, inspiré de l'art moderne et contemporain
