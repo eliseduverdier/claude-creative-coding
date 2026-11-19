@@ -1,5 +1,4 @@
 // Neo-plastic grid, after Mondrian: recursive splits, primary colors, one big letter
-const SEED = 20261117; // fixed seed for a reproducible render
 const MARGIN = 40;
 const LINE = 10;
 const MIN_SIZE = 110;
@@ -11,7 +10,6 @@ const cells = [];
 
 function setup() {
     createCanvas(800, 800);
-    randomSeed(SEED);
     background(PAPER);
 
     splitRect(MARGIN, MARGIN, width - 2 * MARGIN, height - 2 * MARGIN, 0);
