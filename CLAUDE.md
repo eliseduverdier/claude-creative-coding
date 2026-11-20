@@ -3,4 +3,3 @@
 - un dossier par sketch dans sketches/<date>/, sur le modèle des existants
 - une entrée pour la date sur index.html
 - commentaires en anglais, code simple et lisible
-- thèmes de la géométrie, de la typographie, des couleurs, inspiré de l'art moderne et contemporain
