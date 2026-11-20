@@ -1,5 +1,5 @@
 - p5.js via CDN, aucune dépendance, pas de build
 - canvas 800x800, rendu au hasard
 - un dossier par sketch dans sketches/<date>/, sur le modèle des existants
-- une entrée pour la date sur index.html
+- une entrée pour la date sur index.html avec un description courte du theme du sketch
 - commentaires en anglais, code simple et lisible
