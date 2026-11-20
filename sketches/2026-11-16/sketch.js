@@ -1,7 +1,5 @@
 // Perlin flow field, ink on paper
 // New random seed on each reload; add ?seed=123 to the URL to reproduce a render
-const urlSeed = new URLSearchParams(window.location.search).get("seed");
-const SEED = urlSeed !== null ? Number(urlSeed) : Math.floor(Math.random() * 1000000);
 const NUM_STROKES = 1400;
 const STEPS = 140;
 const STEP_LENGTH = 2.2;
@@ -11,9 +9,6 @@ const INKS = ["#14110f", "#1d2a44", "#3a2a22", "#7a1f1f"]; // black, indigo, sep
 
 function setup() {
     createCanvas(800, 800);
-    console.log("seed:", SEED);
-    randomSeed(SEED);
-    noiseSeed(SEED);
     background(PAPER);
     drawPaperGrain();
     noFill();

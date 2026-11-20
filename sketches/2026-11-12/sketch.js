@@ -1,12 +1,10 @@
 // Mondrian-style grid: recursive subdivision with primary colors
-const SEED = 1112;
 const PAPER = "#f4f1ea";
 const PALETTE = ["#d8231f", "#1f4ea1", "#f2c81c", PAPER, PAPER, PAPER];
 const LINE = 10;
 
 function setup() {
     createCanvas(800, 800);
-    randomSeed(SEED);
     background(PAPER);
     stroke("#111");
     strokeWeight(LINE);

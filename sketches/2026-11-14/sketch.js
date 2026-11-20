@@ -1,11 +1,9 @@
 // Color field: stacked soft-edged bands in the spirit of Rothko
-const SEED = 1114;
 const BACKGROUNDS = ["#5b1a18", "#2b2d42", "#3d2c4a"];
 const BANDS = ["#d1495b", "#edae49", "#e07a5f", "#f2cc8f", "#8d5a97"];
 
 function setup() {
     createCanvas(800, 800);
-    randomSeed(SEED);
     background(random(BACKGROUNDS));
     noStroke();
 
