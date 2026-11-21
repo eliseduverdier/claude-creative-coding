@@ -2,7 +2,7 @@
 // Each load gives a different random layout
 const PAPER = "#f4f1e8";
 const INK = "#161616";
-const COLORS = ["#d62828", "#1d4e9e", "#f6bd16"];
+const COLORS = ["#E938E4", "#25D7D7", "#f6bd16"];
 const LINE = 10; // thickness of the black lines
 const MIN_SIZE = 120; // cells smaller than this are not split anymore
 
