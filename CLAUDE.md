@@ -2,4 +2,5 @@
 - canvas 800x800, rendu au hasard
 - un dossier par sketch dans sketches/<date>/, sur le modèle des existants
 - une entrée pour la date sur index.html avec un description courte du theme du sketch
+- regarde la liste des themes sur index.html pour éviter de faire des doublons
 - commentaires en anglais, code simple et lisible
