@@ -1,5 +1,8 @@
-const colors = ["#c29e07", " #41583c", "#dac598", "#3e5052", "#cfcfd4", ""];
-//const colors = ["#ffffff", " #000000", "#cccc00", "#00cccc"];
+// Made by me for Genuary
+
+
+//const colors = ["#c29e07", "#41583C", "#dac598", "#3e5052", "#cfcfd4", ""];
+const colors = ["#ffffff", " #000000", "#cccc00", "#00cccc"];
 const RECT_HEIGHT = 100,
     RECT_WIDTH = 50;
 function setup() {
