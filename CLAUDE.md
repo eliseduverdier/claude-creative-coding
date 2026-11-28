@@ -1,6 +1,6 @@
-- p5.js via CDN, aucune dépendance, pas de build
-- canvas 800x800, rendu au hasard
-- un dossier par sketch dans sketches/<date>/, sur le modèle des existants
-- une entrée pour la date sur index.html avec un description courte du theme du sketch
-- regarde la liste des themes sur index.html pour éviter de faire des doublons
-- commentaires en anglais, code simple et lisible
+- p5.js via CDN, no dependencies, no build process
+- 800x800 canvas, randomized rendering
+- One folder per sketch in `sketches/<date>/`, following the pattern of existing ones
+- An entry for the date in `index.html`, including a short description of the sketch's theme
+- Check the list of themes in `index.html` to avoid duplicates
+- Comments in English; code should be simple and readable
